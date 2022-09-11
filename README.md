@@ -6,6 +6,7 @@ Learn Bash Scripting
 - [Bash Basics](https://www.cs.wcupa.edu/rkline/linux/bash-basics.html)
 - [Bash commands reference](https://ss64.com/bash/)
 - [Bash CheatSheet](https://devhints.io/bash)
+- [Ultimate Guide to Bash Array](https://www.thegeekstuff.com/2010/06/bash-array-tutorial/)
 
 &nbsp;
 &nbsp;
