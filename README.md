@@ -4,7 +4,7 @@ Learn Bash Scripting
 ### Inspiration
 - [Learn Bash](https://www.learnshell.org/)
 - [Bash commands reference](https://ss64.com/bash/)
-- [A Quora post](https://qr.ae/pvO9ha)
+- [Bash CheatSheet](https://devhints.io/bash)
 
 &nbsp;
 &nbsp;
