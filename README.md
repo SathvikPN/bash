@@ -16,6 +16,8 @@ password: <password>
 credentials: sath/sathvik
 ```
 
+> Quick Bash online [here](https://rextester.com/l/bash_online_compiler) (syntax highlight)
+
 ### Command line shortcuts
 ```
 ^ --> ctrl
