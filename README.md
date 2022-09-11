@@ -3,6 +3,7 @@ Learn Bash Scripting
 
 ### Inspiration
 - [Learn Bash](https://www.learnshell.org/)
+- [Bash Basics](https://www.cs.wcupa.edu/rkline/linux/bash-basics.html)
 - [Bash commands reference](https://ss64.com/bash/)
 - [Bash CheatSheet](https://devhints.io/bash)
 
