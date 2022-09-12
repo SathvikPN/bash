@@ -12,12 +12,20 @@ echo "All elem: ${myList[@]}"
 
 unset myList[2] # erase
 
-# Accessing a list by positions can be problematic as unassigned positions are simply ignored
-# myList=(  [9]=cc  [2]=aa  [5]=bb )  # Non-intuitive init possible
-
 for elem in "${myList[@]}"; do
   echo "$elem"
 done
+
+# Accessing a list by positions can be problematic as unassigned positions are simply ignored
+# myList=( [9]="A" [21]=B 'C' )  # Non-intuitive init possible
+for idx in "${!myList[@]}"
+do 
+  echo "${idx}: ${myList[idx]}"
+done
+# 2: B
+# 3: C
+# 9: A
+
 
 myList=( "${myList[@]}" "$appended_elem" )       # append
 myList=( "${myList[@]}" "${anotherList[@]}" )   # concatenate
