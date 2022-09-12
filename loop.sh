@@ -24,3 +24,25 @@ do
         ((x++))  # --> x=$(($x+1))
         sleep 1
 done
+
+
+
+count=0
+while read line; do
+  ((++count))
+  printf "%2d: %s\n" "$count" "${line#my}"
+done < <(grep "pattern" file.txt)
+# input redirection to loop using MANUFACTURED DEVICE: <(grep "pattern" file.txt)
+echo "$count words processed"
+
+# ERROR -----------------------------------------------------------------------------------
+# count variable is being manipulated in a subshell created by the pipe operation 
+# so its value cannot be used upon exiting the while loop.
+
+count=0
+grep "pattern" file.txt | while read line; do
+  ((++count))
+  printf "%2d: %s\n" "$count" "${line#my}"
+done
+echo "$count words processed"
+
