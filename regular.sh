@@ -60,6 +60,7 @@ target=$1
 # if condition || Else case
 [[ $target ]] || { echo "No param passed"; exit 1; }
 # if condition && then case
+[ $# -eq 0 ] && { echo "must have at least one arg."; exit 1; }
 [[ -d $target ]] && { echo "$target is directory:"; cd $target; ls; }
 # echo status=$?    Bash special variable which gives the exit status of a previous command
 
@@ -74,5 +75,5 @@ target=$1
 # =, !=                             (lexicographic comparison)
 # -eq, -ne, -lt, -le, -gt, -ge      (numerical comparison)
 
- 
+
 
