@@ -71,5 +71,8 @@ target=$1
 # x=false; [ "$x" ] && echo x is true 5;
 
 
+# =, !=                             (lexicographic comparison)
+# -eq, -ne, -lt, -le, -gt, -ge      (numerical comparison)
+
  
 
