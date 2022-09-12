@@ -21,6 +21,6 @@ x=0
 while true
 do
         echo -n "$x "
-        x=$(($x+1))
+        ((x++))  # --> x=$(($x+1))
         sleep 1
 done
