@@ -76,4 +76,28 @@ target=$1
 # -eq, -ne, -lt, -le, -gt, -ge      (numerical comparison)
 
 
+# Pattern Match --------------------------------------------------------------------------------------
+# $ ls *.html      # all HTML files (not starting with ".")
+# $ ls .??*        # all dot files except "." and ".."
+# $ ls test[0-3]   # "test0", "test1", "test2", "test3"
+
+# CASE Match -------------------------------------------------------
+grab="file.sh"
+case $grab in
+        *.txt)
+                echo "Text file: $grab"
+                x=1
+                ;; # MUST for each case termination
+        *.sh)
+                echo "Scripts: $grab"
+                x=0
+                ;; # MUST for each case termination
+esac
+
+
+# LOOPING ---------------------------------------------------
+# for x in ...
+# do
+#   statements involving $x
+# done
 
