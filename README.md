@@ -11,22 +11,17 @@ Learn Bash Scripting
 &nbsp;
 &nbsp;
 
-> online linux terminal: [JSLinux](https://bellard.org/jslinux/vm.html?cpu=riscv64&url=fedora33-riscv.cfg&mem=256) [Fedora]
-```
-vflogin <username>
-password: <password>
-credentials: sath/sathvik
-```
+online linux terminal: [JSLinux](https://bellard.org/jslinux/vm.html?cpu=riscv64&url=fedora33-riscv.cfg&mem=256) [Fedora]
 
-> Quick Bash online [here](https://rextester.com/l/bash_online_compiler) (syntax highlight)
+Quick Bash online [here](https://rextester.com/l/bash_online_compiler) (syntax highlight)
 
 ### Command line shortcuts
 ```
 ^ --> ctrl
 ^c cancel current command (even if running)
-^u erase current typed command
+^u erase everything before the cursor (cut)
 ^k erase cmd after the cursor
-^y getback last erased command
+^y getback last erased command (paste)
 ^l clear screen (not a cmd found in history but functionally equivalent to clear cmd)
 ^r Search command in history
 works: Home_button(^a) End_button (^e)
